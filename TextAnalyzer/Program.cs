@@ -4,7 +4,7 @@ using System.Linq;
 using TextAnalyzer.Interface;
 using TextAnalyzer.Services;
 
-namespace TextAnaulyzer
+namespace TextAnalyzer
 {
     class Program
     {
