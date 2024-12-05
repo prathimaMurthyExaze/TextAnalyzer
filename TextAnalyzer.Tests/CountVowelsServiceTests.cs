@@ -19,11 +19,11 @@ namespace TextAnalyzer.Tests
         [Test]
         public void TestCountVowels_WithVowels()
         {
-            string input = "I ate apples";
+            string input = "I like eating apples";
 
             var result = _countVowelsService.Execute(input);
 
-            Assert.That(result, Is.EqualTo("vowels count : 3"));
+            Assert.That(result, Is.EqualTo("The number of vowels is 3"));
         }
 
     }

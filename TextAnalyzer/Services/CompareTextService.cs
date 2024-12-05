@@ -17,13 +17,16 @@ namespace TextAnalyzer.Services
 
             if (consonantsCount > vowelsCount)
             {
-                return "Consonants are more";
+                return "The text has more non vowels than vowels";
             }
-            else
+            else if(vowelsCount > consonantsCount)
             {
-                return "vowels are more";
+                return "The text has more vowels than non vowels";
             }
-
+            else 
+            {
+                return "The text has an equal amount of vowels and non vowels";
+            }
         }
     }
 }

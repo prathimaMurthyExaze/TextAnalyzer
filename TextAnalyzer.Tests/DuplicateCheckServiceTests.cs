@@ -16,11 +16,11 @@ namespace TextAnalyzer.Tests
         [Test]
         public void TestDuplicateCheck_WithDuplicates()
         {
-            string input = "I love to eat apples";
+            string input = "I like eating apples";
 
             string result = _duplicateCheckService.Execute(input);
 
-            Assert.That(result, Is.EqualTo("Found duplicates loetap"));
+            Assert.That(result, Is.EqualTo("Found the following duplicates : ileap"));
         }
     }
 }

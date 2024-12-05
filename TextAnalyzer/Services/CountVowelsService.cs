@@ -11,12 +11,10 @@ namespace TextAnalyzer.Services
     {
         public string Execute(string text)
         {
-         
-
             var vowels = "aeiou";
             var uniqueVowels = text.ToLower().Where(c => char.IsLetter(c)).Where(c => vowels.Contains(c)).Distinct();
 
-            return uniqueVowels.Any() ? $"vowels count : {uniqueVowels.Count()}" : "no vowels found";
+            return uniqueVowels.Any() ? $"The number of vowels is {uniqueVowels.Count()}" : "No vowels were found";
 
         }
     }

@@ -18,7 +18,7 @@ namespace TextAnalyzer.Services
                .Select(g => g.Key)
                .Distinct();
 
-            return duplicates.Any() ? $"Found duplicates {string.Join("", duplicates)}" : "no duplicates found";
+            return duplicates.Any() ? $"Found the following duplicates : {string.Join("", duplicates)}" : "No duplicate values were found";
         }
     }
 }

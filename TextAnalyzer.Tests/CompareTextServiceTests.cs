@@ -21,11 +21,11 @@ namespace TextAnalyzer.Tests
         [Test]
         public void CompareTextService_WithMoreVowels()
         {
-            string input = "I ate";
+            string input = "I eat";
 
             var result = _compareTextService.Execute(input);
 
-            Assert.That(result,Is.EqualTo("vowels are more"));   
+            Assert.That(result,Is.EqualTo("The text has more vowels than non vowels"));   
         }
     }
 }
